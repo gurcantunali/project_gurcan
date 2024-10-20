@@ -1,1 +1,2 @@
 # project_gurcan
+In this project, we observed the development of AML in the mouse model to gain more information about the transformation of AML. In order to understand the mechanisms underlying the development of the disease and to determine target molecules in AML treatment, proteomics analysis was performed on biological samples obtained from the AML disease (M) and disease-free control (C) groups. The obtained data were deeply analyzed using Python and Jupyter.
