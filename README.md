@@ -8,13 +8,13 @@ In conclusion, upregulated and downregulated proteins were determined in the ana
 
 ## Installation
 To run this project, clone the repository and navigate to the project directory.
-git clone https://github.com/gurcantunali/project_gurcan.git
-cd project_gurcan
+- git clone https://github.com/gurcantunali/project_gurcan.git
+- cd project_gurcan
 
 ## Usage
-1. Place the input file `Proteomics_Data.csv` in the same directory as the script or update the `input_file` path in the script to the location of your CSV file.
-2. Run the script:
-   python Proteomics-Project.py
+- Place the input file `Proteomics_Data.csv` in the same directory as the script or update the `input_file` path in the script to the location of your CSV file.
+- Run the script:
+  python Proteomics-Project.py
 
 ## Dependencies
 - PyDESeq2 (DeseqDataSet and DeseqStats): These classes are central to performing differential expression analysis with PyDESeq2. DeseqDataSet sets up the data structure, while DeseqStats runs the statistical tests.
