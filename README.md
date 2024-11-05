@@ -17,14 +17,14 @@ cd project_gurcan
    python Proteomics-Project.py
 
 ## Dependencies
-PyDESeq2 (DeseqDataSet and DeseqStats): These classes are central to performing differential expression analysis with PyDESeq2. DeseqDataSet sets up the data structure, while DeseqStats runs the statistical tests.
-pandas: For data manipulation and processing
-numpy: For numerical operations
-matplotlib and seaborn: For data visualization
-scipy: For statistical analysis
-StandardScaler and PCA: StandardScaler scales data for analysis, while PCA reduces the dimensionality, which is especially useful for visualization and initial exploratory analysis.
-Multipletest: For adjusting p-values for multiple hypothesis testing. 
-Openpyxl: For reading and writing Excel files
+- PyDESeq2 (DeseqDataSet and DeseqStats): These classes are central to performing differential expression analysis with PyDESeq2. DeseqDataSet sets up the data structure, while DeseqStats runs the statistical tests.
+- pandas: For data manipulation and processing
+- numpy: For numerical operations
+- matplotlib and seaborn: For data visualization
+- scipy: For statistical analysis
+- StandardScaler and PCA: StandardScaler scales data for analysis, while PCA reduces the dimensionality, which is especially useful for visualization and initial exploratory analysis.
+- Multipletest: For adjusting p-values for multiple hypothesis testing. 
+- Openpyxl: For reading and writing Excel files
 
 ## Data Requirements
 The primary dataset needed for this analysis is Proteomics_Data.csv. The columns in the file should include:
