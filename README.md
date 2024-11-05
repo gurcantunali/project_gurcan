@@ -28,10 +28,10 @@ cd project_gurcan
 
 ## Data Requirements
 The primary dataset needed for this analysis is Proteomics_Data.csv. The columns in the file should include:
-Accession: Protein identifiers
-Description: Description of each protein
-Abundance M (1,2,3): Abundance values for condition M
-Abundance C (1,2,3): Abundance values for condition C
+- Accession: Protein identifiers
+- Description: Description of each protein
+- Abundance M (1,2,3): Abundance values for condition M
+- Abundance C (1,2,3): Abundance values for condition C
 
 ## Expected Output
 Summary Table: A summary of differentially expressed proteins with key statistics, such as fold change, fdr and p-values for significance.
