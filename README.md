@@ -34,11 +34,11 @@ The primary dataset needed for this analysis is Proteomics_Data.csv. The columns
 - Abundance C (1,2,3): Abundance values for condition C
 
 ## Expected Output
-Summary Table: A summary of differentially expressed proteins with key statistics, such as fold change, fdr and p-values for significance.
-Distribution of Data: A plot (such as a histogram or box plot) to visualize the overall distribution of protein abundances and assess data normalization.
-Principal Component Analysis (PCA): Display a PCA plot to visualize sample separation across conditions.
-Fold Change Calculation: The ratio of mean abundance between conditions, used to quantify changes in protein expression.
-Statistical Significance: Statistical tests (e.g., t-tests or DESeq2) to assess whether differences in protein abundance between conditions are significant.
-Visualizations: Graphs, such as heatmap and/or volcano plot, to highlight significant proteins, expression patterns, and group differences across conditions. 
+- Summary Table: A summary of differentially expressed proteins with key statistics, such as fold change, fdr and p-values for significance.
+- Distribution of Data: A plot (such as a histogram or box plot) to visualize the overall distribution of protein abundances and assess data normalization.
+- Principal Component Analysis (PCA): Display a PCA plot to visualize sample separation across conditions.
+- Fold Change Calculation: The ratio of mean abundance between conditions, used to quantify changes in protein expression.
+- Statistical Significance: Statistical tests (e.g., t-tests or DESeq2) to assess whether differences in protein abundance between conditions are significant.
+- Visualizations: Graphs, such as heatmap and/or volcano plot, to highlight significant proteins, expression patterns, and group differences across conditions. 
 
 
