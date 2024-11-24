@@ -29,6 +29,7 @@ conda environment: proteomics
 - StandardScaler and PCA: StandardScaler scales data for analysis, while PCA reduces the dimensionality, which is especially useful for visualization and initial exploratory analysis.
 - Multipletest: For adjusting p-values for multiple hypothesis testing. 
 - Openpyxl: For reading and writing Excel files
+- adjustText: To optimize overlapping text placement
 
 ## Data Requirements
 The primary dataset needed for this analysis is Proteomics_Data.csv. The columns in the file should include:
