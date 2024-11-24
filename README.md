@@ -12,7 +12,15 @@ To run this project, clone the repository and navigate to the project directory.
 - Run the script:
   python Proteomics_Dummy-Project.py
 
+## Channels
+environment.yml
+Conda environment: proteomics
+- conda-forge
+- defaults
+- anaconda
+
 ## Dependencies
+- python=3.10: Programming language and version used in proteomics analysis.
 - PyDESeq2 (DeseqDataSet and DeseqStats): These classes are central to performing differential expression analysis with PyDESeq2. DeseqDataSet sets up the data structure, while DeseqStats runs the statistical tests.
 - pandas: For data manipulation and processing
 - numpy: For numerical operations
