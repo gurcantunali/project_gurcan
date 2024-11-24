@@ -14,7 +14,7 @@ To run this project, clone the repository and navigate to the project directory.
 
 ## Channels
 environment.yml
-Conda environment: proteomics
+conda environment: proteomics
 - conda-forge
 - defaults
 - anaconda
