@@ -1,10 +1,6 @@
 # project_gurcan
 ## Project Overview
-In this project, we observed the development of AML in the mouse model to gain more information about the transformation of AML. In order to understand the mechanisms underlying the development of the disease and to determine target molecules in AML treatment, proteomics analysis was performed on biological samples obtained from the AML disease (M) and disease-free control (C) groups. The obtained data were deeply analyzed using Python and Jupyter.
-At first, packages needed were installed, and data was read and processed. Distribution of the data was checked. According to log transformed values histogram t was observed that the data was normally distributed. In the PCA analysis, The first PC is the highest one but the first 3 PC’s, which have 50-80%, can explain the variability of most of our data. Control (C) and AML (M) conditions showed a high level of separation, which means difference between groups is high. AML 3 has the highest PC and Control 1 and 2 show the lowest PC. Mean values ​​of the groups were calculated. Then, Log2 values ​​were computed to see the fold change. To determine statistical significance, pvalue was calculated using ttest. To get FDR values, FDR adjustment was applied. According to FDR values, 686 proteins with p<0.05 are significantly disregulated. 630 upregulated and 56 downregulated. 
-Heatmap was created for disregulated proteins. Since many proteins were upregulated and downregulated. Trashold value = 2 was selected for Log2FC. A heatmap was created for the top 55 proteins that were upregulated and downregulated. 
-Then, a volcano plot was created for the upregulated and downregulated proteins. NS (the green dots) refers the proteins with non-significant changes. fdr < 0.05 (blue dots) indicates significantly up- or down-regulated proteins in AML.fdr < 0.05 and Log2FC < -2 & Log2FC > 2 (the red dots) show significantly up-regulated and down-regulated proteins in AML conditions, compared to control, according to threshold value.Since there were too many upregulated proteins, their labels were overlapping each other. Therefore, labels were added for a certain number of proteins. In addition, an attempt was made to add an outline to the dots to determine which dots the labels belong to. Therefore, some corrections were made. However, it did not reach the desired level completely. After the error specified in the last code was fixed, a run was performed, but the process took a long time and did not produce results. 
-In conclusion, upregulated and downregulated proteins were determined in the analyzed data due to the AML effect.
+In this project, proteomics data from AML (disease, M) and control (disease-free, C) samples were analyzed to explore the mechanisms of AML development and identify potential treatment targets. Using Python and Jupyter, necessary Python packages were installed, and proteomics data was imported, processed, and checked for quality. Log transformation revealed a normal distribution, verified using histograms. Principal Component Analysis (PCA) was conducted to reduce dimensionality and visualize differences between groups. The first three PCs explained 50-80% of data variability, showing clear separation between AML and control samples, with AML 3 showing the most variability and Control 1 & 2 showing the least. Group means were calculated to summarize protein expression levels. Log2 fold changes (Log2FC) were computed to quantify protein expression differences. A t-test was applied to identify statistically significant changes, followed by FDR adjustment to control for false discoveries. Proteins with FDR < 0.05 were deemed significant. 686 significantly dysregulated proteins (FDR < 0.05)(630 upregulated and 56 downregulated). Protein expression patterns visualized in heatmaps. The top 25 upregulated and downregulated proteins (Log2FC > 2 or < -2) were highlighted. Upregulated (red), downregulated (red), and non-significant proteins (green) were showed on volcano plot. Top 25 upregulated and downregulated proteins were labeled for emphasis. In conclusion, many proteins showed significant dysregulation in AML compared to controls, with a threshold of Log2FC > 2 or < -2 identifying the most notable changes. These proteins may provide insights into the molecular underpinnings of AML and serve as potential targets for therapeutic intervention.
 
 ## Installation
 To run this project, clone the repository and navigate to the project directory.
@@ -12,11 +8,19 @@ To run this project, clone the repository and navigate to the project directory.
 - cd project_gurcan
 
 ## Usage
-- Place the input file `Proteomics_Data.csv` in the same directory as the script or update the `input_file` path in the script to the location of your CSV file.
+- Place the input file `Proteomics_Data_Dummy.csv` in the same directory as the script or update the `input_file` path in the script to the location of your CSV file.
 - Run the script:
-  python Proteomics-Project.py
+  python Proteomics_Dummy-Project.py
+
+## Channels
+environment.yml
+conda environment: proteomics
+- conda-forge
+- defaults
+- anaconda
 
 ## Dependencies
+- python=3.10: Programming language and version used in proteomics analysis.
 - PyDESeq2 (DeseqDataSet and DeseqStats): These classes are central to performing differential expression analysis with PyDESeq2. DeseqDataSet sets up the data structure, while DeseqStats runs the statistical tests.
 - pandas: For data manipulation and processing
 - numpy: For numerical operations
@@ -25,6 +29,7 @@ To run this project, clone the repository and navigate to the project directory.
 - StandardScaler and PCA: StandardScaler scales data for analysis, while PCA reduces the dimensionality, which is especially useful for visualization and initial exploratory analysis.
 - Multipletest: For adjusting p-values for multiple hypothesis testing. 
 - Openpyxl: For reading and writing Excel files
+- adjustText: To optimize overlapping text placement
 
 ## Data Requirements
 The primary dataset needed for this analysis is Proteomics_Data.csv. The columns in the file should include:
