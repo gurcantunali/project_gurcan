@@ -19,9 +19,12 @@ from adjustText import adjust_text
 import sys
 
 
+# In[2]:
+
+
 # Check if the user supplied a command-line argument for the input file
 if len(sys.argv) != 2:
-    print("Usage: python Proteomics_Dummy-Project_Copy.py <input_file>")
+    print("Usage: python Proteomics_Dummy-Project.py <input_file>")
 
 # Get the input file from the command-line arguments
 input_file = sys.argv[1]
@@ -42,6 +45,10 @@ except Exception as e:
 
 
 counts
+
+
+# In[3]:
+
 
 # Remove rows that contain any NaN values
 counts = counts.dropna()
