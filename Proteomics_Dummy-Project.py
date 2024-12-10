@@ -16,18 +16,32 @@ from pydeseq2.ds import DeseqStats
 from statsmodels.stats.multitest import multipletests
 import openpyxl
 from adjustText import adjust_text
+import sys
 
 
+# Check if the user supplied a command-line argument for the input file
+if len(sys.argv) != 2:
+    print("Usage: python Proteomics_Dummy-Project_Copy.py <input_file>")
 
-# In[2]:
+# Get the input file from the command-line arguments
+input_file = sys.argv[1]
+
+# Load the data from the specified file
+try:
+    counts = pd.read_csv(input_file)
+    print("Data loaded successfully.")
+except FileNotFoundError:
+    print(f"Error: File '{input_file}' not found.")
+    sys.exit(1)
+except pd.errors.EmptyDataError:
+    print(f"Error: File '{input_file}' is empty.")
+    sys.exit(1)
+except Exception as e:
+    print(f"An error occurred while reading the file: {e}")
+    sys.exit(1)
 
 
-counts = pd.read_csv('Proteomics_Data_Dummy.csv')
 counts
-
-
-# In[3]:
-
 
 # Remove rows that contain any NaN values
 counts = counts.dropna()
