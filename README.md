@@ -10,7 +10,7 @@ To run this project, clone the repository and navigate to the project directory.
 ## Usage
 - Place the input file `Proteomics_Data_Dummy.csv` in the same directory as the script or update the `input_file` path in the script to the location of your CSV file.
 - Run the script:
-  python Proteomics_Dummy-Project.py --input Proteomics_Data_Dummy.csv
+  python Proteomics_Dummy-Project.py Proteomics_Data_Dummy.csv
 
 ## Channels
 environment.yml
@@ -30,6 +30,7 @@ conda environment: proteomics
 - Multipletest: For adjusting p-values for multiple hypothesis testing. 
 - Openpyxl: For reading and writing Excel files
 - adjustText: To optimize overlapping text placement
+- sys: to handle command-line arguments, enabling users to supply input.
 
 ## Data Requirements
 The primary dataset needed for this analysis is Proteomics_Data.csv. The columns in the file should include:
