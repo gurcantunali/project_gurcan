@@ -10,7 +10,7 @@ To run this project, clone the repository and navigate to the project directory.
 ## Usage
 - Place the input file `Proteomics_Data_Dummy.csv` in the same directory as the script or update the `input_file` path in the script to the location of your CSV file.
 - Run the script:
-  python Proteomics_Dummy-Project.py
+  python Proteomics_Dummy-Project.py --input Proteomics_Data_Dummy.csv
 
 ## Channels
 environment.yml
